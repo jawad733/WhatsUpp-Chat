@@ -27,30 +27,30 @@
                     <div class="col-12 profile-nav">
                         <div class="row">
                             <!-- profile bar -->
-                            <div class="col-12 d-flex bg-primary text-white py-3 py-sm-0 border border-secondary border-bottom-0">
+                            <div class="col-12 d-flex bg-primary text-white py-0 px-1 px-md-2 border border-secondary border-bottom-0">
                                 <!-- profile pic -->
-                                <div class="profile-pic d-none d-sm-block">
+                                <div class="profile-pic">
                                     <a class="navbar-brand" href="#">
-                                    <img class="rounded-circle" src="img/dp.jpg" style="width: 50px;">
-                                </a>
+                                        <img class="rounded-circle" src="img/dp.jpg" style="width: 50px;">
+                                    </a>
                                 </div>
-                                <div class="d-flex align-items-center h5 mb-0">
+                                <div class="d-flex align-items-center h5 mb-0 nav-name">
                                     <p class="mb-0">WHATS'UPP</p>
                                 </div>
                                 <!-- list of nav icons -->
-                                <ul class="list-unstyled list-inline ml-auto my-auto nav-icons h5">
+                                <ul class="list-unstyled list-inline ml-auto my-auto h5 nav-icons">
                                     
-                                    <li class="list-inline-item mr-3">
+                                    <li class="list-inline-item mr-2 mr-sm-3">
                                         <a href="#" title="Status" data-toggle="modal" data-target="#status-modal">
                                             <i class="fas fa-circle-notch"></i>
                                         </a>
                                     </li>
 
-                                    <li class="list-inline-item mr-3">
+                                    <li class="list-inline-item mr-2 mr-sm-3">
                                         <a href="#" title="New Message"><i class="fas fa-plus"></i></a>
                                     </li>
                                     
-                                    <li class="list-inline-item mr-2">
+                                    <li class="list-inline-item">
                                         <div class="dropdown">
                                             <a href="#" class="dropdown-toggle" id="nav-dropdown-menu" data-toggle="dropdown" title="More Options">
                                                 <i class="fas fa-ellipsis-v"></i>
@@ -84,10 +84,11 @@
                     </div>
                     <!-- Chat list in left pane (Full width on small screens) -->
                     <div class="col-12 chat-list px-0" style="height: calc(100% - 133px);">
-                        <!-- row for chats -->
-                        <div class="d-flex flex-column chats">
+
+                        <!-- row for chat in big screens - no links since message body is on right pane -->
+                        <div class="d-none d-md-flex flex-column chats">
                             <!-- First recent-chat -->
-                            <a href="#" class="" style="">
+                            <a href="#">
                                 <div class="d-flex chat">
                                     <!-- sender avatar -->
                                     <div class="">
@@ -105,7 +106,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="" style="">
+                            <a href="#">
                                 <div class="d-flex chat">
                                     <div class="">
                                         <img src="img/group-logo.svg" class="rounded-circle" style="width: 55px;">
@@ -127,7 +128,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="" style="">
+                            <a href="#">
                                 <div class="d-flex chat">
                                     <!-- sender avatar -->
                                     <div class="">
@@ -145,7 +146,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="" style="">
+                            <a href="#">
                                 <div class="d-flex chat">
                                     <!-- sender avatar -->
                                     <div class="">
@@ -163,7 +164,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="" style="">
+                            <a href="#">
                                 <div class="d-flex chat">
                                     <!-- sender avatar -->
                                     <div class="">
@@ -181,7 +182,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="" style="">
+                            <a href="#">
                                 <div class="d-flex chat">
                                     <!-- sender avatar -->
                                     <div class="">
@@ -199,7 +200,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="" style="">
+                            <a href="#">
                                 <div class="d-flex chat">
                                     <!-- sender avatar -->
                                     <div class="">
@@ -217,7 +218,161 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="" style="">
+                            <a href="#">
+                                <div class="d-flex chat">
+                                    <!-- sender avatar -->
+                                    <div class="">
+                                        <img src="img/dp.jpg" class="rounded-circle" style="width: 55px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center mx-2">
+                                        <span class="font-weight-bold">Basawa Reddy</span>
+                                        <div class="">
+                                            <small class="text-muted"><i class="fas fa-check-double text-info"></i> Bhai! Kidhar h?</small>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <small class="text-muted float-right text-secondary">23:12
+                                    </small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <!-- row for chats on mobile with links-->
+                        <div class="d-flex flex-column d-md-none chats">
+                            <!-- First recent-chat -->
+                            <a href="message.html">
+                                <div class="d-flex chat">
+                                    <!-- sender avatar -->
+                                    <div class="">
+                                        <img src="img/reddy.jpeg" class="rounded-circle" style="width: 55px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center mx-2">
+                                        <span class="font-weight-bold">Basawa Reddy</span>
+                                        <div class="">
+                                            <small class="text-muted"><i class="fas fa-check-double text-info"></i> Bhai! Kidhar h?</small>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <small class="text-muted float-right text-secondary">23:12
+                                    </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="message.html">
+                                <div class="d-flex chat">
+                                    <div class="">
+                                        <img src="img/group-logo.svg" class="rounded-circle" style="width: 55px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center mx-2">
+                                        <span class="font-weight-bold">MI-6 Sunday</span>
+                                        <div class="">
+                                            <small class="text-muted">+91 9845098450: <i class="fas fa-video"></i> Video</small>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <div>
+                                            <small class="text-primary font-weight-bold">Yesterday
+                                        </small>
+                                        </div>
+                                        <div class="ml-auto float-right">
+                                            <img src="img/1-circle.png" style="width: 25px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="message.html">
+                                <div class="d-flex chat">
+                                    <!-- sender avatar -->
+                                    <div class="">
+                                        <img src="img/dp.jpg" class="rounded-circle" style="width: 55px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center mx-2">
+                                        <span class="font-weight-bold">Jigru</span>
+                                        <div class="">
+                                            <small class="text-muted"> Are!</small>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <small class="text-muted float-right text-secondary">23:12
+                                    </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="message.html">
+                                <div class="d-flex chat">
+                                    <!-- sender avatar -->
+                                    <div class="">
+                                        <img src="img/ammi.png" class="rounded-circle" style="width: 55px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center mx-2">
+                                        <span class="font-weight-bold">Ammi Jaan</span>
+                                        <div class="">
+                                            <small class="text-muted"> Where are you?</small>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <small class="text-muted float-right text-secondary">23:12
+                                    </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="message.html">
+                                <div class="d-flex chat">
+                                    <!-- sender avatar -->
+                                    <div class="">
+                                        <img src="img/dp.jpg" class="rounded-circle" style="width: 55px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center mx-2">
+                                        <span class="font-weight-bold">Basawa Reddy</span>
+                                        <div class="">
+                                            <small class="text-muted"><i class="fas fa-check-double text-info"></i> Bhai! Kidhar h?</small>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <small class="text-muted float-right text-secondary">23:12
+                                    </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="message.html">
+                                <div class="d-flex chat">
+                                    <!-- sender avatar -->
+                                    <div class="">
+                                        <img src="img/dp.jpg" class="rounded-circle" style="width: 55px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center mx-2">
+                                        <span class="font-weight-bold">Basawa Reddy</span>
+                                        <div class="">
+                                            <small class="text-muted"><i class="fas fa-check-double text-info"></i> Bhai! Kidhar h?</small>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <small class="text-muted float-right text-secondary">23:12
+                                    </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="message.html">
+                                <div class="d-flex chat">
+                                    <!-- sender avatar -->
+                                    <div class="">
+                                        <img src="img/dp.jpg" class="rounded-circle" style="width: 55px;">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center mx-2">
+                                        <span class="font-weight-bold">Basawa Reddy</span>
+                                        <div class="">
+                                            <small class="text-muted"><i class="fas fa-check-double text-info"></i> Bhai! Kidhar h?</small>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <small class="text-muted float-right text-secondary">23:12
+                                    </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="message.html">
                                 <div class="d-flex chat">
                                     <!-- sender avatar -->
                                     <div class="">

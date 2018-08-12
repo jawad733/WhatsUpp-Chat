@@ -103,3 +103,9 @@ a:hover {
 	padding: 0;
 	margin: 0;
 }
+
+@media screen and (max-width: 340px) {
+	.nav-icons, .nav-name {
+		font-size: 1.1rem;
+	}
+}
