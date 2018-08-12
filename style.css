@@ -1,0 +1,105 @@
+html {
+  font-size: 1rem;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.search-bar > div > input {
+	border-right: none;
+}
+
+.search-bar > div > div {
+	border-left: none;
+}
+
+.search-bar > div > div > span {
+	background-color: white;
+}
+
+.chat-list {
+	overflow-y: auto;
+}
+
+.chats > a > div {
+	padding: 10px 15px;
+	border-bottom: 0.5px solid grey;
+}
+
+.chats > a > div:hover {
+	background-color: #D3D3D3;
+}
+
+.message-body {
+	background-image: url(img/gradient-bg.png);
+	overflow-y: auto;
+}
+
+.m-received {
+	border-radius: 10px 10px 10px 0px;
+	background-color: white;
+}
+
+.m-sent {
+	border-radius: 10px 10px 0px 10px;
+	background-color: #e6ffff;
+	align-self: flex-end;
+}
+
+.m-received, .m-sent {
+	width: 75%;
+}
+
+.dropdown-menu {
+	margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-item:hover {
+	background-color: #F0F0F0;
+}
+
+.dropdown-toggle::before, 
+.dropdown-toggle::after {
+    border: none !important;
+    content: none !important;
+}
+
+.dropdown-toggle{
+	display: block;
+	width: 20px;
+}
+
+.dropdown-divider {
+	padding: 0;
+	margin: 0;
+}
