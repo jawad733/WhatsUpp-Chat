@@ -2,6 +2,11 @@ html {
   font-size: 1rem;
 }
 
+body {
+  font-family: 'Lekton', sans-serif;
+  /*font-family: 'Josefin Slab', serif;*/
+}
+
 ::-webkit-scrollbar
 {
   width: 6px;
@@ -57,20 +62,41 @@ a:hover {
 	overflow-y: auto;
 }
 
-.m-received {
+/*Settings for each chat bubble start*/
+
+.m-received > .message {
 	border-radius: 10px 10px 10px 0px;
 	background-color: white;
 }
 
-.m-sent {
+.m-sent > .message {
 	border-radius: 10px 10px 0px 10px;
-	background-color: #e6ffff;
-	align-self: flex-end;
+	background-color: #ccffdd;
 }
 
-.m-received, .m-sent {
-	width: 75%;
+.m-received > .message, .m-sent > .message {
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	margin: 5px 0;
+	min-width: 140px;
+	max-width: 80%;
 }
+
+.msg-timestamp {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-right: 5px;
+}
+
+.m-received > div > p, .m-sent > div > p {
+	/*width: 75%;*/
+	/*padding: 20px;*/
+	/*min-width: 250px;*/
+	margin-bottom: 10px;
+}
+/*Settings for each chat bubble end*/
 
 .dropdown-menu {
 	margin-top: -1px;
@@ -104,8 +130,35 @@ a:hover {
 	margin: 0;
 }
 
+/*Footer style*/
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+
+
 @media screen and (max-width: 340px) {
 	.nav-icons, .nav-name {
 		font-size: 1.1rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.my-size-d4 {
+		font-size: 3.5rem;
+		line-height: 1.2;
+	}
+
+	.my-size-d3 {
+		font-size: 2.2rem;
+		line-height: 1;
 	}
 }
